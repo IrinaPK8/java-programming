@@ -24,10 +24,11 @@ public class AddressList {
         newAddress.setCity("McLean");
         newAddress.setState("VA");
         newAddress.setZipCode("22182");
-        System.out.println("newAddress.toString() = " + newAddress.toString());
+        System.out.println("newAddress.toString = " + newAddress.toString());
 
-        Address papaJon = new Address("8501 New Tyco rd", "Vienna", "VA", "22182");
 
+        Address papaJohnPizza = new Address ("8501 MAin st", "City", "MD", "12345");
+        System.out.println("Papa John Pizza: " + papaJohnPizza);
 
 
     }

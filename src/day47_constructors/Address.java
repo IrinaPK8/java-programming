@@ -1,5 +1,7 @@
 package day47_constructors;
 
+import org.omg.CORBA.DynAnyPackage.Invalid;
+
 public class Address {
 
     /** Encapsulated Data in the address:
@@ -29,6 +31,21 @@ public class Address {
         // can have more than 1 constructor
         // to call constructor in other class --> Address newAddress = new Address(); (<-- object created)
         // whatever is types in public Address will be printed in runner class when object is created
+        // you run/call constructor one time for one object
+        // if I wanna change values for same object --> use setters
+    }
+
+    // SECOND CONSTRUCTOR, OVERLOAD CONSTRUCTOR provides shortcut to initialize variables in same statement
+    // example:  Address ad = new Address("123 Main st", "Boston", "MA", "12345");
+    public Address (String street, String city, String state, String zipCode) {
+        if (street.isEmpty() || street.length() >50) {
+            System.out.println("Invalid String");
+        }else {
+            this.street = street;       // otherwise assign it, reuse code in setter method
+            this.state = state;
+            this.zipCode = zipCode;
+        }
+
     }
 
     public String getStreet () {
