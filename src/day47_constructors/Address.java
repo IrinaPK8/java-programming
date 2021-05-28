@@ -17,6 +17,20 @@ public class Address {
     private String zipCode;
     private String country = "USA";
 
+    //CONSTRUCTOR
+    public Address () {// type "public", then class name it is in "Address", then (), then {}
+        System.out.println("Address constructor");      // can add some message inside method
+        street = "123 unknown st";
+        city = "Unknown";
+        state = "Unknown";
+        zipCode = "00000";
+
+        // special method, no return type, same name as class name it is in
+        // can have more than 1 constructor
+        // to call constructor in other class --> Address newAddress = new Address(); (<-- object created)
+        // whatever is types in public Address will be printed in runner class when object is created
+    }
+
     public String getStreet () {
         return street;
     }
