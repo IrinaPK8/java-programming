@@ -7,7 +7,7 @@ public class ElectricCar {
     private double price;
     private int year;
     private int range;
-    private static int count;       // all objects will share this variable
+    private static int count;           // all objects will share this variable
             public final static int MAX_RANGE = 400;
 
             public final void charge () {
