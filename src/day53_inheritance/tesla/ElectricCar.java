@@ -1,32 +1,35 @@
 package day53_inheritance.tesla;
-
-public class ElectricCar {
         // TEMPLATE CLASS
-
-        // encapsulating variables
+public class ElectricCar {
+        // declare variables --> encapsulation
     private String make;
     private String model;
     private double price;
     private int year;
     private int range;
+    private static int count;       // all objects will share this variable
 
-        // protected behaviour --> can only be used by subclasses
+        // declare protected behaviour --> can only be used by subclasses
     protected void drive (int miles) {
-        if (range == 0 || range - miles < 0){
+        if (range == 0 || range - miles < 0) {
             System.out.println("ERROR: Cannot drive that far, need to charge");
-        }else {
-            range -= miles;                 // miles variable is declared in the param
-            System.out.println("Driving " + miles + " miles... ");
+        } else {
+            range -= miles;                      // miles variable is declared in the param
+            System.out.println("Driving " + miles + " miles ...");
         }
     }
 
-        // getters and setters for private variables
+        // generate getters and setters for private variables and behavior
     public String getMake() {
         return make;
     }
 
     public void setMake(String make) {
-        this.make = make;
+        if (make.isEmpty()){
+            System.out.println("ERROR: make cannot be blank");
+        }else {
+            this.make = make;
+        }
     }
 
     public String getModel() {
@@ -59,5 +62,31 @@ public class ElectricCar {
 
     public void setRange(int range) {
         this.range = range;
+    }
+
+    public static int getCount(){
+        return count;           // no need in setter, just count
+            }
+
+            // generate toString
+    @Override
+    public String toString() {
+        return "ElectricCar{" +
+                "make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", price=" + price +
+                ", year=" + year +
+                ", range=" + range +
+                '}';
+    }
+            // generate CONSTRUCTOR
+            // once we create our customer constructor, java will use this one (not the empty one which is created by java by default)
+    public ElectricCar(String make, String model, double price, int year, int range) {
+        setMake(make);              // another way to set the make --> more common when setter has some condition (look above for this setter)
+        this.model = model;         // this way allows any type of data to be assigned (no condition set above)
+        this.price = price;
+        this.year = year;
+        this.range = range;
+        count++;                    // increase count by one every time new car is created
     }
 }
