@@ -8,6 +8,12 @@ public class ElectricCar {
     private int year;
     private int range;
     private static int count;       // all objects will share this variable
+            public final static int MAX_RANGE = 400;
+
+            public final void charge () {
+                System.out.println("Charging the electric car using plug");
+                this.range = MAX_RANGE;
+            }
 
         // declare protected behaviour --> can only be used by subclasses
     protected void drive (int miles) {
