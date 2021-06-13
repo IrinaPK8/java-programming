@@ -11,14 +11,10 @@ public class AutoboxingUnboxing {
         int n = 100;
         Integer n1 = n;
 
-
         // UN-BOXING  Wrapper Class Object --> primitive
         Double d1 = new Double (100.5);
         double d2 = d1;
         double d3 = new Double(345.3);  // very rare way to unbox
-
-
-
 
     }
 }

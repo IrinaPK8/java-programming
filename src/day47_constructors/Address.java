@@ -55,7 +55,7 @@ public class Address {
         this.street = street;
     }
 
-    public String setCity() {
+    public String getCity() {
         return city;
     }
     public void setCity(String city) {

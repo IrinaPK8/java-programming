@@ -43,6 +43,5 @@ public class WrapperClasses {
 
         Boolean bl1 = new Boolean (true);
         Boolean bl2 = false;
-
     }
 }

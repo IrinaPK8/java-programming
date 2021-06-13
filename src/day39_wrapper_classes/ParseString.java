@@ -19,6 +19,5 @@ public class ParseString {
         int  linesOfCode = Integer.parseInt(words[2]);
                     // 100 is under index 2 now as String --> need to parse this String to int index [2] --> 100
         System.out.println(linesOfCode);
-
     }
 }

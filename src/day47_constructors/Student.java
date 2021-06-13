@@ -25,6 +25,5 @@ public class Student {
     // constructor with name and age
     public Student (String name, int age) {
         System.out.println("Age and name param constructor | age = " + age + ", name = " + name);
-
     }
 }
