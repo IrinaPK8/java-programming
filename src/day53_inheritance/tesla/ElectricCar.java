@@ -89,4 +89,6 @@ public class ElectricCar {
         this.range = range;
         count++;                    // increase count by one every time new car is created
     }
+
+
 }

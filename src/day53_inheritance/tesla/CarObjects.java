@@ -19,5 +19,21 @@ public class CarObjects {
             System.out.println("Purchasing " + ec1.toString());
         }
 
+        System.out.println("Count = " + ElectricCar.getCount());
+
+        System.out.println("---------------------------------");
+
+        ElectricCar ec2 = new ElectricCar("Tesla", "CyberTruck", 59900.0, 2022, 300);
+        System.out.println(ec2.toString());
+        System.out.println("Count = " + ec2.getCount());    // call static method using Classname
+
+        System.out.println("---------------------------------");
+
+        Roadster roadster = new Roadster("Roadster", 200000, 2022, 620);
+        System.out.println(roadster.toString());
+        roadster.drive(1000);              // ERROR: Cannot drive that far, need to charge
+        roadster.drive(600);                // Driving 600 miles ...
+        System.out.println("Count = " + roadster.getCount());       // static methods are also inherited
+
     }
 }
