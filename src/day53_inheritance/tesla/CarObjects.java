@@ -35,5 +35,16 @@ public class CarObjects {
         roadster.drive(600);                // Driving 600 miles ...
         System.out.println("Count = " + roadster.getCount());       // static methods are also inherited
 
+        System.out.println("---------------------------------");
+
+        ModelX modelX = new ModelX("Tesla", "Model X", 89990.0, 2021, 360);
+        System.out.println(modelX.toString());
+        modelX.drive(10);
+        System.out.println("Having lunch ....");
+        modelX.drive(10);
+        System.out.println("Range remaining = " + modelX.getRange());
+        System.out.println("Total electric cars count = " + ElectricCar.getCount());
+
+
     }
 }
