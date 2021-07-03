@@ -13,9 +13,18 @@ public class ElementsTest {
         WebElement loginLink = new Link(); //access methods from WebElement only
         loginLink.click(); // takes to link class through WebElement (<-- WebElem methods only)
         String txt = loginLink.getText();
-        System.out.println(":txt = " + txt);
+        System.out.println("txt = " + txt);
         // loginLink.getLinkHref(); // cannot do, can access WebElement
 
+        WebElement username = new InputField();
+        username.sendKeys("wooden spoon");
+        username.click();
 
+        WebElementUtil.clickElement(loginLink); // using object of InputField class <-- closer
+        WebElementUtil.clickElement(username);
+        // WebElement.clickElement(new String ("hello"));  <-- not working <-- String is not child of WebElement
+
+        WebElementUtil.getLinkWithText("login");
+        loginLink.click();
     }
 }

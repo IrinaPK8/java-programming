@@ -23,5 +23,4 @@ public class Link implements WebElement {
         System.out.println("Getting link text");
         return "Oracle java";
     }
-
 }

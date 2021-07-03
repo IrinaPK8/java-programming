@@ -23,5 +23,4 @@ public class InputField implements WebElement {
     public void getValue() {
         System.out.println("Getting value into InputField");
     }
-
 }
