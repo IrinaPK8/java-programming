@@ -9,7 +9,6 @@ public class MobileApp {
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
@@ -17,7 +16,6 @@ public class MobileApp {
     public double getVersion() {
         return version;
     }
-
     public void setVersion(double version) {
         this.version = version;
     }
@@ -27,7 +25,6 @@ public class MobileApp {
                 " version " + version + " is downloaded");
         return true;
     }
-
     public void useTheApp(int minutes) {
         System.out.println("Using " + name + " app for "
                 + minutes + " minutes");

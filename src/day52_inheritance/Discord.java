@@ -5,7 +5,6 @@ public class Discord extends MobileApp {
         System.out.println("Chat with " + someone
                 + " on Discord");
     }
-
     /**
      * overload download method --> name stays the same
              * protected boolean download (double version){

@@ -19,6 +19,5 @@ public class AppObjects {
         b22Discord.download();
         b22Discord.printInfo();
         System.out.println(b22Discord.getName());
-
     }
 }
