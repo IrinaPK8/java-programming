@@ -54,5 +54,4 @@ public class ShapesTest {
         System.out.println("---Drawing shapes---");
         shape.draw();
     }
-
 }

@@ -20,6 +20,5 @@ public class EmployeeObject {
         System.out.println("sdetSalary = " + sdetSalary);
         sdetContractor.jobTitle = "SDET";
         System.out.println(sdetContractor.toString());
-
     }
 }

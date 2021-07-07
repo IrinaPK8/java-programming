@@ -1,4 +1,4 @@
-package day00_my_codes.StringManipulations;
+package day00_my_codes.String_Manipulations;
 
 public class Address {
     public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class Address {
         if (address.equals ("")){
             System.out.println("No address found");
         }else {
-            System.out.println(address.toUpperCase());		// NOT PRINTING UPPER CASE
+            System.out.println(address.toUpperCase());
         }
     }
 }

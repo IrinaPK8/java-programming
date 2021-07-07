@@ -4,7 +4,6 @@ import day56_abstraction_interface.greetings.Greeting;
 
 public class Plane extends Transportation implements SelfDrivable, Greeting {
 
-
     @Override
     public void transportPeople() {
         System.out.println("Flying people from one city to another");
